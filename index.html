@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width,user-scalable=0" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title> Atividade03 - Formulários </title>  
+</head>
+<body>
+    <h1>Formulário de Cadastro</h1>
+    
+    <form action="login.html" method="GET">
+        
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label>
+                Nome: </br>
+                <input type="text" name="nome" required/>
+            </label>
+            <label>
+                Endereço: </br>
+                <input type="text" name="endereco"/>
+            </label>
+            <label>
+                Cidade: </br>
+                <input type="text" name="cidade"/>
+            </label>
+            <label>
+                CEP: </br>
+                <input type="text" name="cep" maxlength="9"/>
+            </label>
+            <label>
+                UF: </br>
+                <input type="text" name="uf" maxlength="2"/>
+            </label>
+            <label>
+                Data de Nascimento: </br>
+                <input type="date" name="data"/>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Dados de login</legend>
+            <label>
+                Login: </br>
+                <input type="text" name="login" required/>
+            </label>
+            <label>
+                Senha: </br>
+                <input type="password" name="senha" required minlength="6"/>
+            </label>
+        </fieldset>
+
+        <label>
+            <input type="checkbox" required />
+            Eu declaro que li e aceito os termos de uso
+        </label>
+
+        <button>Fazer Cadastro</button>
+
+
+
+    </form>
+
+</body>
+
+
+</html>
